@@ -8,6 +8,7 @@ global.foodData = require('./db')(function call(err, data, CatData) {
 
 const express = require('express')
 const app = express()
+const path = require('path')
 const port = 5000
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "https://khao-gali-repo.onrender.com");
